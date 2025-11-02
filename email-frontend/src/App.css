@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap');
+
+.App {
+  text-align: center;
+}
+.app-banner {
+  width: 100%; /* 👈 narrower banner width */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 10px 20px 30px; /* adjusted padding for balance */
+  background: linear-gradient(90deg, #0a101a, #468fe4);
+  position: fixed;
+  top: 0;
+  right: 0; /* 👈 align to right */
+  border-radius: 0 0 0 25px; /* 👈 rounded left edge */
+  z-index: 1000;
+  box-shadow: -4px 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.app-title {
+  font-family: 'Nunito Sans', sans-serif;
+  color: #ffffff;
+  margin-right: 40px; /* 👈 space between text and right edge */
+  white-space: nowrap; /* keeps text in one line */
+  text-shadow:
+    2px 2px 0 #091d36,
+    0 0 6px rgba(70, 159, 228, 0.9),
+    0 0 12px rgba(70, 159, 228, 0.6);
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 10px;
+  letter-spacing: .2px;
+  text-transform: uppercase;
+  filter: blur(0.5px);
+}
+
+/* Background gradient */
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: linear-gradient(90deg, rgb(10, 16, 26), rgb(70, 159, 228));
+  color: white;
+  padding: 0 50px;
+}
+/* Logo on left */
+.logo-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-logo {
+  width: 600px;
+  height: 450px;
+  opacity: 0.8; /* 👈 translucent effect */
+  transition: opacity 0.3s ease;
+}
+
+.App-logo:hover {
+  opacity: 2; /* brighter on hover */
+  transform: scale(1.02); 
+}
+
+/* Login form on right */
+.form-container {
+  flex: 1;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.05); /* soft translucent box */
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+input, button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+input {
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: rgb(32, 71, 101);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: rgb(100, 189, 255);
+}
+.remember-me {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  color: #dce9f8;
+  cursor: pointer;
+  user-select: none;
+}
+
+.remember-me input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: rgb(70, 159, 228);
+  cursor: pointer;
+  transform: translateY(1px); /* 👈 aligns visually with text */
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+
+.remember-me span {
+  line-height: 1;
+  display: inline-block;
+  transform: translateY(-1px); /* 👈 fine-tunes alignment */
+}
